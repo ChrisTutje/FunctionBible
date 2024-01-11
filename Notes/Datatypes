@@ -1,0 +1,37 @@
+Datatypes
+
+var; variable
+CONST; constant
+num; number
+int; integer
+0.0, f, dbl; float, double
+$; currency
+; short
+; long
+alnum; alpha-numeric
+'', char; character
+"", str; string
+``, {}; template literal, fstring
+; date
+; time
+; military time
+; adress
+; temperature
+; degree
+; weight
+; percentage
+bool; boolean
+Class; class
+obj; object
+id; identification
+pk; primary key
+fk; foreign key
+seq; sequence, autonumber
+pub; public
+priv; private, enclosed
+; protected
+0b; binary
+0x; hexadecimal
+; void, pass
+; null
+NaN; not a number

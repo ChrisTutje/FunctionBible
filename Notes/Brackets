@@ -1,0 +1,8 @@
+Brackets
+
+(); parenthesis, priority, argument, parameter
+{}; curly braces, nesting
+[]; square brackets, lists, indexing
+<>; tag, library
+</>; closing tag
+#; hashtag

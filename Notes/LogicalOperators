@@ -1,0 +1,15 @@
+Logical Operators
+
+&&; and
+||; or
+!, ~; not
+!&&; nand, not and
+!||; nor, not or
+^; xor, exclusive or
+!~||; xnor, exclusive not or
+
+p; proposition
+q;
+; except, but
+); if, implication
+->; therefore

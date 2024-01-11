@@ -1,5 +1,6 @@
-from Arithmetic import *
+from Math.Arithmetic import *
+from Booleans.NumericalBooleans import *
 
 if __name__ == "__main__":
-    result = division(2, 2)
+    result = isNegative(100)
     print(f"Result: {result}")

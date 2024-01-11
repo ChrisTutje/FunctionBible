@@ -1,0 +1,18 @@
+Relational Operators
+
+=; assignment
+==; equals
+===; strict equality, datatype equality
+!=; not equal
+!==; not strictly equal
+~; similar?
+~~; approximate?
+; congruent?
+"="; like
+; temporary assignment?
+<; less than
+>; greater than
+<=; less than or equal to
+>=; greater than or equal to
+$in; in, where
+$nin; not in, wheren't
