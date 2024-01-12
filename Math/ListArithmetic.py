@@ -9,3 +9,12 @@ def product(*args):
 
 def quotient(*args):
     pass
+
+def minimum():
+    pass
+
+def maximum():
+    pass
+
+def range():
+    pass

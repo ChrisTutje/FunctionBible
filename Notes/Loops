@@ -1,0 +1,28 @@
+while True:  # While Loop
+    pass
+
+while True:  #do-while loop
+    if False:
+        break
+
+counter = 0
+sentinelValue = 10
+
+while counter < sentinelVale: #for loop
+    counter += 1
+
+for i in range():  # Python for loop
+
+for i in list:  #for each
+    print(i)
+
+def recursion(counter)
+    if count <= 0:
+        return
+    else:
+        pass
+
+    recursion(counter - 1)
+
+   
+

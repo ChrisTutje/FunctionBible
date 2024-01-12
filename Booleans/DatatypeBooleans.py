@@ -6,7 +6,10 @@ def isInteger(x):
 
 def isFloat(x):
     pass
-double = float
+isDouble = isFloat
 
 def isString(x):
+    pass
+
+def isCharacter():
     pass

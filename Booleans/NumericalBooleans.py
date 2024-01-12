@@ -21,3 +21,6 @@ def isAntiprime(x):
 
 def isSquare(x):
     return x >= 0 and int(x ** 0.5) ** 2 == x
+
+def isCube():
+    pass

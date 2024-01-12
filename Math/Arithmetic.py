@@ -2,12 +2,17 @@ def add(x, y):
     return x + y
 
 
+addition = add
+
+
 def increment(x, y):
     pass
 
 
 def subtract(x, y):
     return x - y
+
+subtraction = subtract
 
 
 def decrement(x, y):
@@ -16,6 +21,8 @@ def decrement(x, y):
 
 def multiply(x, y):
     return x * y
+
+multiplication = multiply
 
 
 def augment(x, y):
@@ -35,6 +42,8 @@ def divide(x, y):
         raise ValueError("Can't' divide by zero")
     return x / y
 
+division = divide
+
 
 def diminish(x, y):
     pass
@@ -53,15 +62,21 @@ def floorDivide(x, y):
         raise ValueError("Can't' divide by zero")
     return x // y
 
+floorDivision = floorDivide
+
 
 def modulo(x, y):
     if y == 0:
         raise ValueError("Can't' modulo by zero")
     return x % y
 
+modularDivision = modulo
+
 
 def exponent(x, y):
     return x ** y
+
+
 power = exponent
 
 
@@ -93,6 +108,7 @@ def permutate(x):
         result += i
     return result
 
+
 def subtractivePermutate(x):
     result = 0
     for i in range(1, x + 1):
@@ -118,6 +134,9 @@ def divisiveFactorial(x):
 
 
 def primeFactorization(x):
+    pass
+
+def simplification():
     pass
 
 
