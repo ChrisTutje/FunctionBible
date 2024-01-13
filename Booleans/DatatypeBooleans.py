@@ -1,15 +1,21 @@
-def isNumber(x):
+def isNumber():
     pass
 
-def isInteger(x):
+def isInteger():
     pass
 
-def isFloat(x):
+def isFloat():
     pass
 isDouble = isFloat
 
-def isString(x):
+def isAlphaNumeric():
+    pass
+
+def isString():
     pass
 
 def isCharacter():
+    pass
+
+def isBoolean():
     pass

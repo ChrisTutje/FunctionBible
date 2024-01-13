@@ -29,12 +29,12 @@ def augment(x, y):
     pass
 
 
-def double(x):
-    return x * 2
+def double(num):
+    return num * 2
 
 
-def triple(x):
-    return x * 3
+def triple(num):
+    return num * 3
 
 
 def divide(x, y):
@@ -49,12 +49,12 @@ def diminish(x, y):
     pass
 
 
-def halve(x):
-    return x / 2
+def halve(num):
+    return num / 2
 
 
-def quarter(x):
-    return x / 4
+def quarter(num):
+    return num / 4
 
 
 def floorDivide(x, y):
@@ -86,63 +86,72 @@ def reciprocal(x, y):
     return pow(x, -y)
 
 
-def square(x):
-    return x ** 2
+def square(num):
+    return num ** 2
 
 
-def squareRoot(x):
-    return x ** 0.5
+def squareRoot(num):
+    return num ** 0.5
 
 
-def cubeRoot(x):
-    return x ** (1/3)
+def cubeRoot(num):
+    return num ** (1/3)
 
 
-def root(x, y):
-    return pow(x, 1.0 / y)
+def root(base, power):
+    return pow(base, 1.0 / power)
 
 
-def permutate(x):
+def permutate(num):
     result = 0
-    for i in range(1, x + 1):
+    for i in range(1, num + 1):
         result += i
     return result
 
 
-def subtractivePermutate(x):
+def subtractivePermutate(num):
     result = 0
-    for i in range(1, x + 1):
+    for i in range(1, num + 1):
         result -= i
     return result
 
 
-def factorial(x):
-    if x < 0:
+def factorial(num):
+    if num < 0:
         raise ValueError("Factorial is not defined for negative numbers")
     result = 1
-    for i in range(1, x + 1):
+    for i in range(1, num + 1):
         result *= i
     return result
 
-def divisiveFactorial(x):
-    if x < 0:
+def divisiveFactorial(num):
+    if num < 0:
         raise ValueError("Factorial is not defined for negative numbers")
     result = 1
-    for i in range(1, x + 1):
+    for i in range(1, num + 1):
         result /= i
     return result
 
 
-def primeFactorization(x):
-    pass
+def primeFactorization(num):
+    factors = []
+    divisor = 2
+
+    while num > 1:
+        while num % divisor == 0:
+            factors.append(divisor)
+            num //= divisor
+        divisor += 1
+
+    return factors
 
 def simplification():
     pass
 
 
-def absoluteValue(x):
-    return abs(x)
+def absoluteValue(num):
+    return abs(num)
 
 
-def negation(x):
-    return -x
+def negation(num):
+    return -num
