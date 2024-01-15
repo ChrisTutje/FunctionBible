@@ -92,8 +92,28 @@ wrapAround = cycle
 def merge():
     pass
 
-def zip():
-    pass
+def zipArray(array1, array2):
+    zipped = []
+
+    # Ensure both arrays have the same length
+    min_len = min(len(array1), len(array2))
+
+    for i in range(min_len):
+        zipped.append(array1[i])
+        zipped.append(array2[i])
+
+    # Add any remaining elements from longer array
+    zipped.extend(array1[min_len:])
+    zipped.extend(array2[min_len:])
+
+    return zipped
+zip = zipArray
+
+def unZipArray(array):
+    unZipped1 = array[::2]
+    unZipped2 = array[1::2]
+    return unZipped1, unZipped2
+unZip = unZipArray
 
 def map():
     pass

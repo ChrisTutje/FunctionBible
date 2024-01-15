@@ -77,11 +77,38 @@ def generateRandomSequence(indexValue, lowestValue, highestValue):
     return randomSequence
 generateRandom = generateRandomSequence
 
-def generateCTSequence(indexValue):
-    pass
-
-
-
 def sequenceGenerator(startRange, endRange, incrementor, index):
     pass
+
+def generateCTSequence(indexValue):
+    CTSequence = []
+
+    for i in range(1, indexValue + 1):
+        x = i
+        while x % 2 == 0:
+            x = x / 2
+
+        index = int((x - 1) // 2)
+        CTSequence.append(index + 1)
+
+    return CTSequence
+
+def generateCTSequenceGraph(indexValue):
+    array = []
+
+    for i in range(1, indexValue + 1):
+        x = i
+        while x % 2 == 0:
+            x = x / 2
+
+        index = int((x - 1) // 2)
+        if len(array) < (index+1):
+            array.append(list())
+        array[index].append(i)
+    return array
+
+#pattern = generateCTSequenceGraph(16)
+
+#for i in range(len(pattern)):
+    #print(f"{i+1}:\t\t{pattern[i]}")
 
