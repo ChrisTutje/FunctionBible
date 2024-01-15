@@ -1,16 +1,7 @@
-from Booleans.DatatypeBooleans import *
-from Booleans.ListBooleans import *
-from Booleans.NumericalBooleans import *
-from Booleans.StringBooleans import *
-from Math.Arithmetic import *
-from Math.ListArithmetic import *
-from Math.MathematicalConstants import *
-from Math.RandomMath import *
-from ObjectOrientedProgramming.Classes import *
-from ObjectOrientedProgramming.Simulations.Car import *
-from StringOperations.StringOperations import *
+from Loops.Loops import *
+from Math.Sequences.NumericalSequenceGenerators import *
 
 if __name__ == "__main__":
-    result = primeFactorization(15)
+    result = generateCTSequence(8)
     print(f"Result: {result}")
 
