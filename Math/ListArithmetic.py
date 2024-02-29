@@ -10,11 +10,32 @@ def product(*args):
 def quotient(*args):
     pass
 
-def minimum():
-    pass
+def minimum(list):
+    if not list:
+        return None
 
-def maximum():
-    pass
+    minimum = list[0]
+
+    for i in list:
+        if i < minimum:
+            minimum = list
+
+    return minimum
+#min = minimum
+
+def maximum(list):
+    if not list:
+        return None
+
+    maximum = list[0]
+
+    for i in list:
+        if i > maximum:
+            maximum = i
+
+    return maximum
+#max = maximum
 
 def range():
     pass
+

@@ -1,13 +1,18 @@
+def listNumericalBooleansCommands():
+    functions = [name for name, obj in globals().items() if callable(obj) and name != 'listNumericalBooleansCommands']
+    for func_name in functions:
+        print(func_name)
+
 def isEven(x):
     return x % 2 == 0
 
-def isOdd(x):
+def isOdd(x: (int, float)) -> bool:
     return x % 2 != 0
 
-def isPositive(x):
+def isPositive(x: (int, float)) -> bool:
     return x >= 0
 
-def isNegative(x):
+def isNegative(x: (int, float)) -> bool:
     return x < 0
 
 def isPrime(x):

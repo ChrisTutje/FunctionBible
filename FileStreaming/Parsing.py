@@ -10,6 +10,7 @@ rightStrip = rightTrim
 def trimAll(str):
     return str.replace(" ", "")
 stripAll = trimAll
+removeSpaces = trimAll
 def removeCommas(str):
     return str.replace(",", "")
 

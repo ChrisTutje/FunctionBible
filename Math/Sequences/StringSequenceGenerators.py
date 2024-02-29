@@ -1,11 +1,27 @@
 def generateAlphabet():
-    pass
+    for i in range(26):
+        uppercaseLetter = chr(ord('A') + i)
+        lowercaseLetter = chr(ord('a') + i)
+        print(f"{uppercaseLetter}{lowercaseLetter}", end=" ")
+def generateAlphabetUppercase():
+    for i in range(26):
+        uppercaseLetter = chr(ord('A') + i)
+        print(f"{uppercaseLetter}", end=" ")
+
+generateUppercase = generateAlphabetUppercase
+
+def generateAlphabetLowercase():
+    for i in range(26):
+        lowercaseLetter = chr(ord('a') + i)
+        print(f"{lowercaseLetter}", end=" ")
 
 def generateVowels():
-    pass
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    return vowels
 
 def generateConsonants():
-    pass
+    consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z']
+    return consonants
 
 def generatePassword():
     pass

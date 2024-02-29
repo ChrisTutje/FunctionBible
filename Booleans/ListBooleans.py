@@ -1,3 +1,8 @@
+def listListBooleansCommands():
+    functions = [name for name, obj in globals().items() if callable(obj) and name != 'listListBooleansCommands']
+    for func_name in functions:
+        print(func_name)
+
 def isEmpty():
     pass
 
@@ -63,3 +68,11 @@ def hasKeys():
     pass
 hasHash = hasKeys
 
+def hasAny(array, value):
+    return any(element == value for element in array)
+
+def isIn(array: list, value) -> bool:
+    return value in array
+
+def hasAll(array, value):
+    return all(element == value for element in array)

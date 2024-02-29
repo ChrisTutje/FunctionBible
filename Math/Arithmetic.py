@@ -1,122 +1,127 @@
-def add(x, y):
+def listArithmeticCommands():
+    functions = [name for name, obj in globals().items() if callable(obj) and name != 'listArithmeticCommands']
+    for func_name in functions:
+        print(func_name)
+
+def addition(x: (int, float), y: (int, float)) -> (int, float):
     return x + y
 
 
-addition = add
+add = addition
 
 
 def increment(x, y):
     pass
 
 
-def subtract(x, y):
+def subtraction(x: (int, float), y: (int, float)) -> (int, float):
     return x - y
 
-subtraction = subtract
+subtract = subtraction
 
 
 def decrement(x, y):
     pass
 
 
-def multiply(x, y):
+def multiplication(x: (int, float), y: (int, float)) -> (int, float):
     return x * y
 
-multiplication = multiply
+multiply = multiplication
 
 
 def augment(x, y):
     pass
 
 
-def double(num):
+def double(num: (int, float)) -> (int, float):
     return num * 2
 
 
-def triple(num):
+def triple(num: (int, float)) -> (int, float):
     return num * 3
 
 
-def divide(x, y):
+def division(x: (int, float), y: (int, float)) -> (int, float):
     if y == 0:
         raise ValueError("Can't' divide by zero")
     return x / y
 
-division = divide
+divide = division
 
 
 def diminish(x, y):
     pass
 
 
-def halve(num):
+def halve(num: (int, float)) -> (int, float):
     return num / 2
 
 
-def quarter(num):
+def quarter(num: (int, float)) -> (int, float):
     return num / 4
 
 
-def floorDivide(x, y):
+def floorDivision(x: (int, float), y: (int, float)) -> (int, float):
     if y == 0:
         raise ValueError("Can't' divide by zero")
     return x // y
 
-floorDivision = floorDivide
+floorDivide = floorDivision
 
 
-def modulo(x, y):
+def modularDivision(x: (int, float), y: (int, float)) -> (int, float):
     if y == 0:
         raise ValueError("Can't' modulo by zero")
     return x % y
 
-modularDivision = modulo
+modula = modularDivision
 
 
-def exponent(x, y):
+def exponent(x: (int, float), y: (int, float)) -> (int, float):
     return x ** y
 
 
 power = exponent
 
 
-def reciprocal(x, y):
+def reciprocal(x: (int, float), y: (int, float)) -> (int, float):
     if x == 0:
         raise ValueError("Reciprocal of zero is undefined")
     return pow(x, -y)
 
 
-def square(num):
+def square(num: (int, float)) -> (int, float):
     return num ** 2
 
 
-def squareRoot(num):
+def squareRoot(num: (int, float)) -> (int, float):
     return num ** 0.5
 
 
-def cubeRoot(num):
+def cubeRoot(num: (int, float)) -> (int, float):
     return num ** (1/3)
 
 
-def root(base, power):
+def root(base: (int, float), power: (int, float)) -> (int, float):
     return pow(base, 1.0 / power)
 
 
-def permutate(num):
+def permutate(num: (int, float)) -> (int, float):
     result = 0
     for i in range(1, num + 1):
         result += i
     return result
 
 
-def subtractivePermutate(num):
+def subtractivePermutate(num: (int, float)) -> (int, float):
     result = 0
     for i in range(1, num + 1):
         result -= i
     return result
 
 
-def factorial(num):
+def factorial(num: (int, float)) -> (int, float):
     if num < 0:
         raise ValueError("Factorial is not defined for negative numbers")
     result = 1
@@ -124,7 +129,7 @@ def factorial(num):
         result *= i
     return result
 
-def divisiveFactorial(num):
+def divisiveFactorial(num: (int, float)) -> (int, float):
     if num < 0:
         raise ValueError("Factorial is not defined for negative numbers")
     result = 1
@@ -133,7 +138,7 @@ def divisiveFactorial(num):
     return result
 
 
-def primeFactorization(num):
+def primeFactorization(num: (int, float)) -> (int, float):
     factors = []
     divisor = 2
 
@@ -149,9 +154,9 @@ def simplification():
     pass
 
 
-def absoluteValue(num):
+def absoluteValue(num: (int, float)) -> (int, float):
     return abs(num)
 
 
-def negation(num):
+def negation(num: (int, float)) -> (int, float):
     return -num
