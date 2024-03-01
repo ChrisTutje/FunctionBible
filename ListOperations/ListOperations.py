@@ -40,27 +40,6 @@ def remove():
 def removeAt():
     pass
 
-def removeAll():
-    pass
-
-def removeEven():
-    pass
-
-def removeOdd():
-    pass
-
-def removeNegative():
-    pass
-
-def removePositive():
-    pass
-
-def removeGreater():
-    pass
-
-def removeLesser():
-    pass
-
 def drop():
     pass
 

@@ -14,16 +14,18 @@ from Math.RandomMath.RandomMath import *
 from Math.Sequences.NumericalSequenceGenerators import *
 from Math.Sequences.StringSequenceGenerators import *
 from StringOperations.StringOperations import *
+from Typecasting.Typecasting import *
 from Typecasting.UnitConversion import *
 
 def foo():
+    result = convertDecimalToFraction(0.333)
 
-    return generateCTSequence(64)
+    return result
 
 if __name__ == "__main__":
     #listAllCommands()
 
-    #array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    #array = generateEvens(1, 10)
     result = foo()
     #parsedResult = ""
 
