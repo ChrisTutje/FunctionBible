@@ -13,6 +13,9 @@ add = addition
 def increment(x, y):
     pass
 
+def proliferate(num: (int, float)) -> (int, float):
+    return num + 1
+
 
 def subtraction(x: (int, float), y: (int, float)) -> (int, float):
     return x - y
@@ -22,6 +25,11 @@ subtract = subtraction
 
 def decrement(x, y):
     pass
+
+def deliferate(num: (int, float)) -> (int, float):
+    return num - 1
+
+decline = deliferate
 
 
 def multiplication(x: (int, float), y: (int, float)) -> (int, float):
@@ -33,6 +41,11 @@ multiply = multiplication
 def augment(x, y):
     pass
 
+def nullify(num: (int, float)) -> int:
+    return num * 0
+
+def increaseByOneAndAHalf(num: (int, float)) -> int:
+    return num * 1.5
 
 def double(num: (int, float)) -> (int, float):
     return num * 2
@@ -53,9 +66,14 @@ divide = division
 def diminish(x, y):
     pass
 
+def decreaseByOneAndAHalf(num: (int, float)) -> int:
+    return num / 1.5
+
 
 def halve(num: (int, float)) -> (int, float):
     return num / 2
+
+half = halve
 
 
 def quarter(num: (int, float)) -> (int, float):
@@ -75,7 +93,7 @@ def modularDivision(x: (int, float), y: (int, float)) -> (int, float):
         raise ValueError("Can't' modulo by zero")
     return x % y
 
-modula = modularDivision
+modulo = modularDivision
 
 
 def exponent(x: (int, float), y: (int, float)) -> (int, float):
@@ -160,3 +178,5 @@ def absoluteValue(num: (int, float)) -> (int, float):
 
 def negation(num: (int, float)) -> (int, float):
     return -num
+
+negate = negation

@@ -64,3 +64,6 @@ def listAllCommands():
             print()
 
     listFilesWithFunctions()
+
+listAllFunctions = listAllCommands
+help = listAllCommands

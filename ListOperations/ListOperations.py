@@ -94,8 +94,8 @@ def unZipArray(array):
     return unZipped1, unZipped2
 unZip = unZipArray
 
-def map():
-    pass
+#def map():
+    #pass
 
 #def filter():
     #pass

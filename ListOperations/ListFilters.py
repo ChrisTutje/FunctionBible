@@ -1,75 +1,97 @@
-def keepAll():
+def keepAllElements(lst: list) -> list:
+    return lst
+
+keepAll = keepAllElements
+def removeAllElements(lst: list) -> list:
+    lst.clear()
+
+removeAll = removeAllElements
+clear = removeAllElements
+def keepAlphaNumerical(lst: list) -> list:
     pass
 
-def removeAll():
+def removeAlphaNumerical(lst: list) -> list:
     pass
 
-clear = removeAll
+def keepNumericalElements(lst: list) -> list:
+    return [x for x in lst if isinstance(x, (int, float))]
 
-def keepAlphaNumerical():
+keepNumbers = keepNumericalElements
+
+def removeNumericalElements(lst: list) -> list:
+    return [x for x in lst if not isinstance(x, (int, float))]
+
+removeNumbers = removeNumericalElements
+
+def keepIntegerElements(lst: list) -> list:
+    return [x for x in lst if isinstance(x, (int))]
+
+keepIntegers = keepIntegerElements
+keepInts = keepIntegerElements
+
+def removeIntegerElements(lst: list) -> list:
+    return [x for x in lst if not isinstance(x, (int))]
+
+removeIntegers = removeIntegerElements
+removeInts = removeIntegerElements
+
+def keepFloats(lst: list) -> list:
     pass
 
-def removeAlphaNumerical():
+def removeFloats(lst: list) -> list:
     pass
 
-def keepSpecialCharacters():
+def keepEvenElements(lst: list) -> list:
+    return [x for x in lst if isinstance(x, int) and x % 2 == 0]
+
+keepEvens = keepEvenElements
+
+def removeEvenElements(lst: list) -> list:
+    return [x for x in lst if not (isinstance(x, int) and x % 2 == 0)]
+
+removeEvens = removeEvenElements
+
+def keepOddElements(lst: list) -> list:
+    return [x for x in lst if isinstance(x, int) and x % 2 != 0]
+
+keepOdds = keepOddElements
+
+def removeOddElements(lst: list) -> list:
+    return [x for x in lst if not (isinstance(x, int) and x % 2 != 0)]
+
+removeOdds = removeOddElements
+
+
+def keepPositiveElements(lst: list) -> list:
+    return [x for x in lst if isinstance(x, (int, float)) and x > 0]
+
+keepPositives = keepPositiveElements
+
+def removePositiveElements(lst: list) -> list:
+    return [x for x in lst if not (isinstance(x, (int, float)) and x > 0)]
+
+removePositives = removePositiveElements
+
+def keepNegativeElements(lst: list) -> list:
+    return [x for x in lst if isinstance(x, (int, float)) and x < 0]
+
+keepNegatives = keepNegativeElements
+
+def removeNegativeElements(lst: list) -> list:
+    return [x for x in lst if not (isinstance(x, (int, float)) and x < 0)]
+
+removeNegatives = removeNegativeElements
+
+def keepPrime(lst: list) -> list:
     pass
 
-def removeSpecialCharacters():
+def removePrime(lst: list) -> list:
     pass
 
-def keepNumbers():
+def keepAntiPrime(lst: list) -> list:
     pass
 
-def removenumbers():
-    pass
-
-def keepIntegers():
-    pass
-
-def removeIntegers():
-    pass
-
-def keepFloats():
-    pass
-
-def removeFloats():
-    pass
-
-def keepEvens():
-    pass
-
-def removeEvens():
-    pass
-
-def keepOdds():
-    pass
-
-def removeOdds():
-    pass
-
-def keepPositive():
-    pass
-
-def removePositive():
-    pass
-
-def keepNegative():
-    pass
-
-def removeNegative():
-    pass
-
-def keepPrime():
-    pass
-
-def removePrime():
-    pass
-
-def keepAntiPrime():
-    pass
-
-def removeAntiPrime():
+def removeAntiPrime(lst: list) -> list:
     pass
 
 def keepGreaterThan():
@@ -90,44 +112,74 @@ def keepEqualTo():
 def removeEqualTo():
     pass
 
-def keepLetters():
+def keepLetters(lst: list) -> list:
     pass
 
-def removeLetters():
+def removeLetters(lst: list) -> list:
     pass
 
-def keepVowels():
+def keepVowels(lst: list) -> list:
     pass
 
-def removeVowels():
+def removeVowels(lst: list) -> list:
     pass
 
-def keepConsonants():
+def keepConsonants(lst: list) -> list:
     pass
 
-def removeConsonants():
+def removeConsonants(lst: list) -> list:
     pass
 
-def keepUpperCase():
+def keepUpperCase(lst: list) -> list:
     pass
 
-def removeUpperCase():
+def removeUpperCase(lst: list) -> list:
     pass
 
-def keepLowerCase():
+def keepLowerCase(lst: list) -> list:
     pass
 
-def removeLowerCase():
+def removeLowerCase(lst: list) -> list:
     pass
 
-def keepDuplicateCharacters():
+def keepSpecialCharacters():
     pass
 
-def removeDuplicateCharacters():
+def removeSpecialCharacters():
     pass
 
-def keepUniqueCharacters():
+def keepPunctuation():
     pass
 
-def removeUniqueCharacters():
+def removePunctutation():
     pass
+
+def keepDuplicateCharacters(lst: list) -> list:
+    pass
+
+def removeDuplicateCharacters(lst: list) -> list:
+    pass
+
+def keepUniqueCharacters(lst: list) -> list:
+    pass
+
+def removeUniqueCharacters(lst: list) -> list:
+    pass
+
+
+def keepCharacterInstances(lst: list, *keep: str) -> list:
+    return [x for x in lst if x in keep]
+
+keepCharInstances = keepCharacterInstances
+keepCharacters =keepCharacterInstances
+keepCharacter = keepCharacterInstances
+keepChars = keepCharacterInstances
+keepChar = keepCharacterInstances
+def removeCharacterInstances(lst: list, *remove: str) -> list:
+    return [x for x in lst if x not in remove]
+
+removeCharInstances = removeCharacterInstances
+removeCharacters = removeCharacterInstances
+removeCharacter = removeCharacterInstances
+removeChars = removeCharacterInstances
+removeChar = removeCharacterInstances
