@@ -37,7 +37,7 @@ def alphabetToNumber(s: str) -> int:
 def numberToAlphabet():
 	pass
 
-def arabicToRoman(a:int) -> str:
+def arabicToRoman(arabicNumeral: int) -> str:
     arabicNumerals = {
         1000: 'M',
         900: 'CM',
@@ -55,13 +55,42 @@ def arabicToRoman(a:int) -> str:
     }
     result = ''
     for value, symbol in arabicNumerals.items():
-        while a >= value:
+        while arabicNumeral >= value:
             result += symbol
-            a -= value
+            arabicNumeral -= value
     return result
 
-def romanToArabic():
-	pass
+def romanToArabic(romanNumeral: str) -> int:
+	valid_characters = 'IVXLCDM'
+	if any(char not in valid_characters for char in romanNumeral):
+		raise ValueError("Invalid Roman numeral: '{}'".format(romanNumeral))
+
+	romanNumerals = {
+		'M': 1000,
+		'CM': 900,
+		'D': 500,
+		'CD': 400,
+		'C': 100,
+		'XC': 90,
+		'L': 50,
+		'XL': 40,
+		'X': 10,
+		'IX': 9,
+		'V': 5,
+		'IV': 4,
+		'I': 1
+	}
+	result = 0
+	i = 0
+	while i < len(romanNumeral):
+		if i + 1 < len(romanNumeral) and romanNumeral[i:i + 2] in romanNumerals:
+			result += romanNumerals[romanNumeral[i:i + 2]]
+			i += 2
+		else:
+			result += romanNumerals[romanNumeral[i]]
+			i += 1
+
+	return result
 
 def camelcaseToSnakecase(camel: str) -> str:
     camel = ''.join(['_' + i.lower() if i.isupper() else i for i in camel])

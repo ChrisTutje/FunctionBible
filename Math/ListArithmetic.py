@@ -1,41 +1,89 @@
-def summation(*args):
-    return sum(args)
+from typing import List, Union, Any
 
-def difference(*args):
+def length(lst: List) -> int:
+    return len(lst)
+size = length
+count = length
+
+def summation(lst: List[Union[int, float]]) -> Union[int, float]:
+    if not lst:
+        return 0
+    return sum(lst)
+
+def difference(lst: List[Union[int, float]]) -> Union[int, float]:
+    if not lst:
+        return 0
+    result = lst[0]
+    for num in lst[1:]:
+        result -= num
+    return result
+
+def product(lst: List[Union[int, float]]) -> Union[int, float]:
+    if not lst:
+        return 0
+    result = lst[0]
+    for num in lst[1:]:
+        result *= num
+    return result
+
+def quotient(lst: List[Union[int, float]]) -> Union[int, float]:
+    if not lst:
+        return 0
+    result = lst[0]
+    for num in lst[1:]:
+        result /= num
+    return result
+def exponentiation(lst: List[Union[int, float]]) -> Union[int, float]:
+    pass
+def rootExtraction(lst: List[Union[int, float]]) -> Union[int, float]:
     pass
 
-def product(*args):
-    pass
+def shifting(lst: List[Any], shiftAmount: Union[int, float]) -> List[Any]:
+    return [x + shiftAmount for x in lst]
 
-def quotient(*args):
-    pass
+shift = shifting
+def shiftByNumberOfElements(lst: List[int]) -> List[int]:
+    x = len(lst)
+    return [num + x for num in lst]
 
-def minimum(list):
-    if not list:
+shiftByElements = shiftByNumberOfElements
+def minimum(lst: List[Union[int, float]]) -> Union[int, float, None]:
+    if not lst:
         return None
 
-    minimum = list[0]
+    minimum = lst[0]
 
-    for i in list:
+    for i in lst:
         if i < minimum:
-            minimum = list
+            minimum = i
 
     return minimum
 #min = minimum
 
-def maximum(list):
-    if not list:
+def maximum(lst: List[Union[int, float]]) -> Union[int, float, None]:
+    if not lst:
         return None
 
-    maximum = list[0]
+    maximum = lst[0]
 
-    for i in list:
+    for i in lst:
         if i > maximum:
             maximum = i
 
     return maximum
 #max = maximum
 
-def range():
-    pass
+def range(lst: List[Union[int, float]]) -> Union[int, float, None]:
+    if not lst:
+        return None
+
+    minimum = maximum = lst[0]
+
+    for num in lst:
+        if num < minimum:
+            minimum = num
+        elif num > maximum:
+            maximum = num
+
+    return maximum - minimum
 

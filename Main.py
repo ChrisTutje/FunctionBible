@@ -1,3 +1,4 @@
+from BigONotation.BigONotation import *
 from Booleans.DatatypeBooleans import *
 from Booleans.GeometryBooleans import *
 from Booleans.ListBooleans import *
@@ -7,6 +8,8 @@ from FileStreaming.IO import *
 from FileStreaming.Parsing import *
 from ListOperations.ListFilters import *
 from ListOperations.ListOperations import *
+from ListOperations.SearchingAlgorithms import *
+from ListOperations.SortingAlgorithms import *
 from Loops.Loops import *
 from Math.Arithmetic import *
 from Math.ListArithmetic import *
@@ -21,17 +24,23 @@ from Typecasting.UnitConversion import *
 from functionalProgramming.metaFunctions import *
 
 
-def foo(array):
 
-    return list(map(compose(absoluteValue), keepIntegers(array)))
+
+def foo(input):
+
+    return quickSort(input)
 
 if __name__ == "__main__":
     #listAllCommands()
 
-    array = generateTestSequence()
-    result = foo(array)
-    #parsedResult = ""
+    lst = [3, 2, 1, 4]
+    result = foo(lst)
 
-    #print(f"List: {array}")
     print(f"Result: {result}")
-    #print(f"Parsed Result: {parsedResult}")
+
+
+
+
+
+
+

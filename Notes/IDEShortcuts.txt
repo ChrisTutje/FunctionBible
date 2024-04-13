@@ -1,0 +1,60 @@
+Button Shortcuts:
+    ctrl+c: copy
+    ctrl+v: paste
+    ctrl+x: cut
+
+    ctrl+f: find
+    ctrl+h: replace
+    shift+alt+f12: find all references
+
+    ctrl+z: undo
+    ctrl+y: redo
+
+    ctrl+n: new file
+    ctrl+o: open file
+    ctrl+s: save
+    : save all
+
+    ctrl+/: toggle comment
+
+    ctrl+`: toggle terminal
+    ctrl+p: toggle command palette
+
+Highlighting:
+    shift+left/right: highlight
+    ctrl+l: highlight line
+    ctrl+d: highlight matching
+    ctrl+a: select all
+
+    left/right: move cursor
+    ctrl+left/right: move cursor word by word
+
+    ctrl+g: go to line
+    alt+shift+up/down: move line
+    alt+shift+up/down: move line and copy
+    ctrl+shift+k: delete line
+
+    alt+click: multi-line editing
+
+Command Palette:
+    code . : open current directory
+    code `filename` : open file
+    @ : find
+    #: find each instance
+
+Terminal:
+    up/down: cycle through command history
+    ctrl+k: clear
+    ctrl+c: kill server
+
+web:
+    npm run dev: start server
+
+git:
+    git add .: add all mutated files to commit
+    git commit -m "": commit with a message
+    git push origin <branchName>: push to branch
+
+environment setup:
+    npm create vite@latest <folderName> -- -- template react-ts: create a React template
+
