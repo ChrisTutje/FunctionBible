@@ -31,12 +31,14 @@ def foo(input):
     return quickSort(input)
 
 if __name__ == "__main__":
-    #listAllCommands()
+    filePath = 'Notes/IDEShortcuts.txt'
+    printFile(filePath)
+    # listAllCommands()
 
-    lst = [3, 2, 1, 4]
-    result = foo(lst)
+    # lst = [3, 2, 1, 4]
+    # result = foo(lst)
 
-    print(f"Result: {result}")
+    # print(f"Result: {result}")
 
 
 

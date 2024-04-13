@@ -9,7 +9,6 @@ def listFilesWithFunctions(directory="."):
     files_with_functions = []
 
     for root, dirs, files in os.walk(directory):
-        # Exclude the .venv directory from traversal
         if ".venv" in dirs:
             dirs.remove(".venv")
 
@@ -42,7 +41,6 @@ def listAllCommands():
         filesWithFunctions = []
 
         for root, dirs, files in os.walk(directory):
-            # Exclude the .venv directory from traversal
             if ".venv" in dirs:
                 dirs.remove(".venv")
 
@@ -67,3 +65,10 @@ def listAllCommands():
 
 listAllFunctions = listAllCommands
 help = listAllCommands
+
+def printTextFile(file_path):
+    with open(file_path, 'r') as file:
+        content = file.read()
+        print(content)
+        
+printFile = printTextFile

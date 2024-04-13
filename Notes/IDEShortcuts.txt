@@ -20,6 +20,8 @@ Button Shortcuts:
     ctrl+`: toggle terminal
     ctrl+p: toggle command palette
 
+    shift+alt+f: format code (Prettier)
+
 Highlighting:
     shift+left/right: highlight
     ctrl+l: highlight line
