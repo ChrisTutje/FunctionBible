@@ -31,9 +31,9 @@ def foo(input):
     return quickSort(input)
 
 if __name__ == "__main__":
-    filePath = 'Notes/IDEShortcuts.txt'
-    printFile(filePath)
-    # listAllCommands()
+    # filePath = 'Notes/IDEShortcuts.txt'
+    # printFile(filePath)
+    listAllCommands()
 
     # lst = [3, 2, 1, 4]
     # result = foo(lst)
