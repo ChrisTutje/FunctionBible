@@ -6,6 +6,7 @@ from Booleans.NumericalBooleans import *
 from Cataloging.CatalogingFunctions import *
 from FileStreaming.IO import *
 from FileStreaming.Parsing import *
+from Graphs.GraphAlgorithms import *
 from ListOperations.ListFilters import *
 from ListOperations.ListOperations import *
 from ListOperations.SearchingAlgorithms import *
@@ -39,6 +40,7 @@ if __name__ == "__main__":
     # result = foo(lst)
 
     # print(f"Result: {result}")
+    
 
 
 
