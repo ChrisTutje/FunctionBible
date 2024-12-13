@@ -49,6 +49,26 @@ Terminal:
     ctrl+k: clear
     ctrl+c: kill server
 
+commands:
+    ls: list
+    ls -R; list subdirectories
+    cd: change directory
+    cd + tab: autofill destination
+    ..: back
+    cd~: home
+    cd /: root directory
+    touch: create new file
+    mkdir: make directory, new folder
+    mv: rename
+    rm: remove
+    rmdir: remove directory, delete folder
+    mv file "": move file 
+    ssh:
+    quit: exit
+    "".: run program
+    npm install "": install dependency
+    npm audit fix: fix vulnerabilities with dependency
+
 web:
     npm run dev: start server
 
@@ -56,6 +76,10 @@ git:
     git add .: add all mutated files to commit
     git commit -m "": commit with a message
     git push origin <branchName>: push to branch
+    git status:
+    git clone: 
+    git pull:
+
 
 environment setup:
     npm create vite@latest <folderName> -- -- template react-ts: create a React template
